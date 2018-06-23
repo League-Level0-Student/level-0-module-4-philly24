@@ -4,20 +4,28 @@
 
 
 public class StringMethods1 {
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
 		
 		// 1. Create a String variable and initialize it to whatever you want
-
+		String answer = "qwrety";
+		
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
-		
+		System.out.println(answer.charAt(2));
 		// 3. Print the length of your String to the console.
 		//    HINT: .length
-
+			System.out.println(answer.length());
 		// 4. Using a for loop, print one char at time to the console.
 		//    HINT: use .length() to determine how many loops
-
+for (int i = 0; i < answer.length(); i++) {
+	System.out.println(answer.charAt(i));
+}
+		for (int i = 0; i < answer.length(); i++) {
+			if (answer.charAt(i) == 'e') {
+				System.out.println("e is at index "+i);
 		
+			}
+		}
 		// 5. Pick a char inside your String, and use a loop to determine
 		//    what position/index in the String the char is located.
 		//    Print the char's position to the console.
